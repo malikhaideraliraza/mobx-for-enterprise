@@ -11,7 +11,7 @@ import {
   
   export default class PostStore {
   
-    byId = new observable.map<number, Post>();
+    byId = observable.map<number, Post>();
   
     constructor(private store: AppStore) {
       makeObservable(this);

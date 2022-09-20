@@ -12,7 +12,7 @@ import {
   
   export default class CommentStore {
   
-    byId = new observable.map<number, Comment>();
+    byId = observable.map<number, Comment>();
   
     constructor(private store: AppStore) {
       makeObservable(this);
